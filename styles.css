@@ -8,7 +8,15 @@ body {
   background-color: white;
 }
 
-
+h1{
+  font-family: "Univers Next", "Pro Bold" ;
+}
+h2{
+  font-family: "Univers Next", "Pro Bold" ;
+}
+h3{
+  font-family: "Univers Next", "Pro Bold" ;
+}
 
 .topnav {
   background-color: #84bd00;
@@ -16,6 +24,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: -webkit-sticky;
 	position: sticky;
+  width: 100%;
 	top: 10px;
 }
 /* Style the links inside the navigation bar */
@@ -46,7 +55,28 @@ body {
 /* Style the Logo on the navigation bar */
 #logo_topnav {
   float: right;
-  max-width: 13%;
-  max-height: 13%;
+  
+  width: 10%;
+  height: 10%;
   padding: 0px 30px;
+}
+
+.footer { 
+  background-color: lightgray;
+  text-align: center;
+  bottom: 5px;
+  width: 99.25%;
+  max-height: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.25%;
+}
+
+.footer a {
+  
+  font-family: "Univers Next", "Pro Bold" ;
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: gray;
 }
