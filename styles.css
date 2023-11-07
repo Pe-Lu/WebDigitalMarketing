@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Univers Next";
+  src: url('Fonts/Univers\ Next\ Pro\ Black.ttf');
+  src: url('Fonts/UniversNextProBold.ttf');
+}
+
+body {
+  background-color: white;
+}
+
+
+
+.topnav {
+  background-color: #84bd00;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+  float: left;
+  text-align: center;
+  font-family: "Univers Next", "Pro Bold" ;
+  
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #72a200;
+  color: lightgray;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: lightgray;
+}
+
+/* Style the Logo on the navigation bar */
+#logo_topnav {
+  float: right;
+  max-width: 13%;
+  max-height: 13%;
+  padding: 0px 30px;
+}
