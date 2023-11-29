@@ -1,0 +1,115 @@
+html {
+    background-color: #1c1823;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;  /*padding problem*/
+    background: rgb(23, 112, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    padding-right: 70px;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #FFF8F0;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.4s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a.active {
+    color: lightgray;
+}
+
+
+body {
+    background: #1c1823;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    color: #55206D;
+    margin: 0;
+    padding: 100;
+}
+
+h1 {
+    font-family: League Spartan;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #1e815b;
+}
+
+h2 {
+    font-family: League Spartan;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1e815b;
+}
+
+.bigtext {
+    color: #1e815b;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#hero-section {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#hero-text {
+    width: 50%;
+}
+
+#hero-bild {
+    height: 240px;
+}
+
+#Knopf1 {
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: rgb(35, 68, 2);
+}
+
+#AfterHero {
+    padding: 50px 200px 0 300px;
+}
