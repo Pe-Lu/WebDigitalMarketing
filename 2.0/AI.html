@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title> BT Website </title>
+
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/style-AI.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <!--Header/Navbar-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">Home</a>   
+            <a class="active" href="studiengang.html">Studiengang</a>   
+            <a href="ueberuns.html">Über Uns</a>   
+            <a href="Impressum.html">Impressum</a>
+            <a href="space.html">Space</a>               
+        </nav>
+
+        <a class="logo" alt="HSWT Logo" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');">HSWT Bioingenieurwissenschaften</a>
+    </header>
+
+    <div class="background">
+        <img class="background-image" src="Images/code.png" ></img>
+        <div class="box-stg-content">
+            <ul class="liste-stg">
+                <h1>Angewandte Informatik</h1>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg" src="Svg/graduate-white.svg"></img>
+                    <h4>Bachelor of Science (B. Sc.)</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/clock-white.svg"></img>
+                    <h4>7 Semester</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/speak-white.svg"></img>
+                    <h4>Deutsch</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/location-white.svg"></img>
+                    <h4>Campus Weihenstephan</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/calendar-white.svg"></img>
+                    <h4>Wintersemester</h4>
+                </li>
+            </ul>
+            <div class="box-stg-background"></div>
+        </div>
+        
+    </div>
+    <a class="button-stg-back" href="studiengang.html" >
+        <img id="arrowback" src="Svg/arrow-back-white.svg" onmouseenter="highlight(this)" onmouseleave="unhighlight(this)"></img>
+    </a>
+    <script>
+        function highlight(image) {
+          image.src = "Svg/arrow-back-gray.svg"; //Black Image
+        }
+        function unhighlight(image) {
+          image.src = "Svg/arrow-back-white.svg"; //white Image
+        }
+    </script>
+
+    
+    
+    
+
+    
+</body>
+
+</html>
