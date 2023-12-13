@@ -1,0 +1,113 @@
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.main-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 12.5%;
+    left: 3%;
+    right: 3%;
+    display: flex;
+
+}
+.container_studiengang {
+    display: flex;
+    position: relative;
+    width: 27.5%;
+    height: 85%;
+    left: 0px;
+
+    border-radius: 7.5%;
+    box-shadow: -1rem 0 3rem #000;
+
+    /*background-color: gray;*/
+    overflow: hidden;
+    text-align: center;
+    transition: 0.4s ease-out;
+}
+
+#container-1 {
+    z-index: 1;
+}
+#container-2 {
+    z-index: 2;
+}
+#container-3 {
+    z-index: 3;
+}
+#container-4 {
+    z-index: 4;
+}
+#container-1:hover {
+    z-index: 5;
+}
+#container-2:hover {
+    z-index: 5;
+}
+#container-3:hover {
+    z-index: 5;
+}
+#container-4:hover {
+    z-index: 5;
+}
+
+.container_studiengang:not(:first-child) {
+    margin-left: -5.5%;
+}
+
+.container_studiengang:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    
+}
+
+.container_studiengang:hover ~ .container_studiengang {
+    position: relative;
+    left: 3%;
+    right: 10%;
+    transition: 0.4s ease-out;
+}
+
+
+.container_studiengang:hover img {
+    filter: brightness(0.5); /* Darkens the image when the container is hovered over */
+}
+
+.container_studiengang img{
+    max-height: 100%;
+    width: auto;
+    position: absolute;
+    animation: scrollImage 90s linear infinite;
+    z-index: 1; 
+    transition: filter 0.75s ease; /* Adds a transition for a smoother effect */
+}
+
+@keyframes scrollImage {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: -300%; 
+    }
+}
+
+.image-text {
+    position: absolute;
+    /*background-color: gray;*/
+    white-space: nowrap;
+    width: 100%;
+    top: 85%;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 1.5s ease; /* Adds a transition for a smoother effect */
+    z-index: 2;
+}
+  
+.container_studiengang:hover .image-text {
+    opacity: 1; /* Displays the text when the container is hovered over */
+  }
+  

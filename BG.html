@@ -7,6 +7,7 @@
     <title> BT Website </title>
 
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/style-bg.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +30,71 @@
         <a class="logo" alt="HSWT Logo" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');">HSWT Bioingenieurwissenschaften</a>
     </header>
 
-    <h1>Brau- und Getränketechnologie</h1>
+    <div class="background-scroll">
+        <img class="background-image" src="Images/backgroung-bg.jpeg" ></img>
+        <div class="box-stg-content">
+            <ul class="liste-stg">
+                <h1>Brau- und Getränketechnologie</h1>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg" src="Svg/graduate-white.svg"></img>
+                    <h4>Bachelor of Engineering (B. Eng.)</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/clock-white.svg"></img>
+                    <h4>7 Semester</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/speak-white.svg"></img>
+                    <h4>Deutsch</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/location-white.svg"></img>
+                    <h4>Campus Weihenstephan</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/calendar-white.svg"></img>
+                    <h4>Wintersemester</h4>
+                </li>
+            </ul>
+            <div class="box-stg-background"></div>
+        </div>
+    </div>
 
+    <div class="content-rest">
+        <h1>Brau- und Getränketechnologie</h1>
+        <p class="text-stg-presentation">
+            Unser Studiengang Brau- und Getränketechnik kombiniert sowohl die traditionellen Brauverfahren mit modernster Technologie, um eine fundierte Ausbildung im Bereich der Getränkeherstellung und Getränketechnik zu bieten. Der Studiengang ist praxisorientiert und vermittelt umfassendes Wissen und die erforderlichen Fähigkeiten, um in der Brau- und Getränkeindustrie erfolgreich zu sein.
+            Das Studium beginnt mit den Grundlagenstudium sowie der Lebensmitteltechnologie und Chemie, die eine solide Basis für das Verständnis der Herstellungsprozesse von Getränken bietet. Im weiteren Verlauf des Studiums werden spezifische Aspekte der Brau- und Getränketechnik vertieft. Dazu gehören unter anderem die Auswahl und Beschaffung von hochwertigen Rohstoffen, der Einsatz von Mikroorganismen für Gärungsprozesse und die Verfahren der Konservierung und Abfüllung von Getränken.
+            Ein Schwerpunkt des Studiengangs liegt auf der Anwendung von Technologie und Automatisierung in der Getränkeherstellung. Die Studierenden werden in die verschiedenen Produktionsprozesse eingeführt und lernen, wie moderne Maschinen und Anlagen zur Effizienzsteigerung und Produktoptimierung eingesetzt werden können. Zudem werden auch Themen wie Qualitätsmanagement, Hygiene und Arbeitssicherheit behandelt, um den hohen Standards in der Getränkeindustrie gerecht zu werden.
+            Neben den fachlichen Inhalten wird großen Wert auf die praktische Ausbildung gelegt, wobei durch Laborarbeit die Kenntnisse in der Praxis angewendet werden. Zudem kooperieren wir eng mit der Brau- und Getränkeindustrie, um den Studierenden Praktikumsplätze und Projekte in renommierten Unternehmen zu vermitteln.
+            Absolventinnen und Absolventen des Studiengangs Brau- und Getränketechnik sind gefragte Fachkräfte in der Lebensmittelindustrie, insbesondere in Brauereien, Getränkeherstellungsunternehmen, Abfüllbetrieben und Laboren. Die breite und praxisorientierte Ausbildung ermöglicht ihnen einen direkten Einstieg in das Berufsfeld der Brau- und Getränketechnik als Betriebsleiter, Produktionsleiter, Qualitätsmanager oder Berater.
+            Wenn du eine Leidenschaft für Technologie, Chemie und Lebensmittelproduktion hast und Teil dieser faszinierenden Branche sein möchtest, dann ist das Studium der Brau- und Getränketechnik genau das Richtige für dich. 
+        </p>
+        <div class="spacer"></div>
+    </div>
+    <script>
+        document.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var windowHeight = window.innerHeight;
+            var cover = document.querySelector('.background-scroll');
+    
+        // La propriété clipPath est utilisée pour découper la div en fonction du défilement
+        cover.style.clipPath = 'inset(0 0 ' + (scrollPosition) + 'px 0)';
+        });
+    </script>
+
+
+    <a class="button-stg-back" href="studiengang.html" >
+        <img id="arrowback" src="Svg/arrow-back-white.svg" onmouseenter="highlight(this)" onmouseleave="unhighlight(this)"></img>
+    </a>
+    <script>
+        function highlight(image) {
+          image.src = "Svg/arrow-back-gray.svg"; //Gray Image
+        }
+        function unhighlight(image) {
+          image.src = "Svg/arrow-back-white.svg"; //white Image
+        }
+      </script>
 
     
     

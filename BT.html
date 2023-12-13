@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width" />
 
     <title> BT Website </title>
-
+    
     <link rel="stylesheet" href="Styles/styles.css">
-
+    <link rel="stylesheet" href="Styles/style-bt.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,71 @@
         <a class="logo" alt="HSWT Logo" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');">HSWT Bioingenieurwissenschaften</a>
     </header>
 
-    <h1>Biotechnologie</h1>
+    <div class="background-scroll">
+        <img class="background-image" src="Images/background-bt.jpg" ></img>
+        <div class="box-stg-content">
+            <ul class="liste-stg">
+                <h1>Biotechnologie</h1>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg" src="Svg/graduate-white.svg"></img>
+                    <h4>Bachelor of Science (B. Sc.)</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/clock-white.svg"></img>
+                    <h4>7 Semester</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/speak-white.svg"></img>
+                    <h4>Deutsch</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/location-white.svg"></img>
+                    <h4>Campus Weihenstephan</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/calendar-white.svg"></img>
+                    <h4>Wintersemester</h4>
+                </li>
+            </ul>
+            <div class="box-stg-background"></div>
+        </div>
+        
+    </div>
+
+    <div class="content-rest">
+        <h1>Biotechnologie</h1>
+        <p class="text-stg-presentation">
+            Die Biotechnologie vereint Erkenntnisse der Biologie, Chemie und Technik, sowie Verfahrenstechnik, um Fortschritte für die Bereiche Medizin, Lebensmittelproduktion und Umwelttechnologie beizutragen.
+            Unser Bachelor-Studiengang in Biotechnologie bietet eine umfassende Ausbildung, die theoretisches Wissen mit praktischer Erfahrung verbindet. Es wird einem vermittelt, wie sie biologische Prozesse und Organismen nutzen können, um innovative Lösungen für komplexe Probleme zu entwickeln. 
+            Im Verlauf des Studiums werden Fachkenntnisse in Bereichen wie Molekularbiologie, Genetik, Zelltechnologie, Bioinformatik und Bioprozesstechnik, erworben. Die Studierenden lernen, wie sie experimentelle Methoden verwenden, um biotechnologische Prozesse zu analysieren und zu optimieren. Darüber hinaus werden die Kenntnisse praxsisorientiert in unseren Laboren angewandt.
+            In der Biotechnologie wird großen Wert darauf gelegt die Verbindung zwischen verschiedenen Fachbereichen darzustellen. Um fachlichen Kompetenzen und ein tieferes Verständnis für die vielfältigen Anwendungsmöglichkeiten der Biotechnologie zu entwickeln.
+            Nach Abschluss des Studiums können Absolventen beispielsweise in Pharmaunternehmen, Biotech-Startups, Forschungseinrichtungen oder medizinischen Laboren tätig sein, oder in der Lebensmittel- oder Umweltindustrie. Darüber hinaus besteht die Möglichkeit zur Weiterqualifizierung in einem Masterstudium oder zur Promotion.
+        </p>
+        <div class="spacer"></div>
+    </div>
+    <script>
+        document.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var windowHeight = window.innerHeight;
+            var cover = document.querySelector('.background-scroll');
+    
+        // La propriété clipPath est utilisée pour découper la div en fonction du défilement
+        cover.style.clipPath = 'inset(0 0 ' + (scrollPosition) + 'px 0)';
+        });
+    </script>
+
+    <a class="button-stg-back" href="studiengang.html" >
+        <img id="arrowback" src="Svg/arrow-back-white.svg" onmouseenter="highlight(this)" onmouseleave="unhighlight(this)"></img>
+    </a>
+    <script>
+        function highlight(image) {
+          image.src = "Svg/arrow-back-gray.svg"; //Black Image
+        }
+        function unhighlight(image) {
+          image.src = "Svg/arrow-back-white.svg"; //white Image
+        }
+      </script>
+
 </body>
 
 </html>

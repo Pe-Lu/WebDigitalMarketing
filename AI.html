@@ -7,12 +7,15 @@
     <title> BT Website </title>
 
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/style-AI.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
     <!--Header/Navbar-->
@@ -28,7 +31,76 @@
         <a class="logo" alt="HSWT Logo" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');">HSWT Bioingenieurwissenschaften</a>
     </header>
 
-    <h1>Angewandte Informatik</h1>
+    <div class="background-scroll">
+        <img class="background-image" src="Images/background-ai.png" ></img>
+        <div class="box-stg-content">
+            <ul class="liste-stg">
+                <h1>Angewandte Informatik</h1>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg" src="Svg/graduate-white.svg"></img>
+                    <h4>Bachelor of Science (B. Sc.)</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/clock-white.svg"></img>
+                    <h4>7 Semester</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/speak-white.svg"></img>
+                    <h4>Deutsch</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/location-white.svg"></img>
+                    <h4>Campus Weihenstephan</h4>
+                </li>
+                <li style="color: whitesmoke;">
+                    <img class="svg-stg"  src="Svg/calendar-white.svg"></img>
+                    <h4>Wintersemester</h4>
+                </li>
+            </ul>
+            <div class="box-stg-background"></div>
+        </div>
+        
+    </div>
+
+    <div class="content-rest">
+        <h1>Angewandte Informatik</h1>
+        <p class="text-stg-presentation">
+            Die Angewandte Informatik ist ein interdisziplinäres Studienfach, das die Theorie und Praxis der Informatik mit verschiedenen anderen Fachbereichen kombiniert. In diesem Studiengang lernst du, wie du komplexe informatische Probleme analysierst und diese in effektive Lösungen umsetzt.
+            Die Lehrveranstaltungen im Studiengang Angewandte Informatik, sind unter anderem die Bereiche Softwareentwicklung, Datenbanken, künstliche Intelligenz, Netzwerke und Betriebssysteme. Durch die Vermittlung von Programmierkenntnissen in verschiedenen Programmiersprachen wirst du in die Lage versetzt, Softwareanwendungen auf verschiedenen Plattformen zu entwickeln.
+            Während deines Studiums bekommst du die Möglichkeit, an realen Projekten und Praktika teilzunehmen. Das ermöglicht es dir, deine theoretischen Kenntnisse in der Praxis anzuwenden. 
+            Der Studiengang Angewandte Informatik fördert auch deine Kreativität und Innovationsfähigkeit. Du wirst ermutigt, neue Ideen zu entwickeln und diese in eigenständigen Projekten umzusetzen.
+            Nach dem Abschluss des Studiengangs Angewandte Informatik stehen dir viele spannende Berufsmöglichkeiten offen. Du könntest beispielsweise als Softwareentwickler, Datenanalytiker, IT-Berater oder Systemarchitekt arbeiten. Die Nachfrage nach Fachkräften in der Informatikbranche ist hoch, und Absolventen unseres Studiengangs Angewandte Informatik sind für Arbeitgeber äußerst attraktiv.
+
+            Wenn du eine Leidenschaft für Technologie, Chemie und Lebensmittelproduktion hast und Teil dieser faszinierenden Branche sein möchtest, dann ist das Studium der Brau- und Getränketechnik genau das Richtige für dich. 
+        </p>
+        <div class="spacer"></div>
+    </div>
+    <script>
+        document.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var windowHeight = window.innerHeight;
+            var cover = document.querySelector('.background-scroll');
+    
+        // La propriété clipPath est utilisée pour découper la div en fonction du défilement
+        cover.style.clipPath = 'inset(0 0 ' + (scrollPosition) + 'px 0)';
+        });
+    </script>
+
+
+    <a class="button-stg-back" href="studiengang.html" >
+        <img id="arrowback" src="Svg/arrow-back-white.svg" onmouseenter="highlight(this)" onmouseleave="unhighlight(this)"></img>
+    </a>
+    <script>
+        function highlight(image) {
+          image.src = "Svg/arrow-back-gray.svg"; //Black Image
+        }
+        function unhighlight(image) {
+          image.src = "Svg/arrow-back-white.svg"; //white Image
+        }
+    </script>
+
+    
+    
     
 
     
